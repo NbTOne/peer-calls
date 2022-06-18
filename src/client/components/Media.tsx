@@ -101,7 +101,7 @@ extends React.PureComponent<MediaProps, MediaComponentState> {
     }
     this.setState({ error: false })
 
-    props.logInfo('Dialling...')
+    props.logInfo('拨号...')
     try {
       await props.dial({
         nickname,
@@ -141,7 +141,7 @@ extends React.PureComponent<MediaProps, MediaComponentState> {
       <form className='media' onSubmit={this.handleSubmit}>
         <div className='form-item'>
           <label className={classnames({ 'label-error': !nickname })}>
-            Enter your name
+            输入你的名称
           </label>
           <input
             required
@@ -186,7 +186,7 @@ extends React.PureComponent<MediaProps, MediaComponentState> {
         </div>
 
         <button type='submit' disabled={!props.joinEnabled}>
-          Join Call
+          加入会话
         </button>
 
         {this.state.error && (
@@ -251,16 +251,16 @@ interface OptionsProps {
 }
 
 const labels = {
-  audioinput: 'Audio',
-  videoinput: 'Video',
+  audioinput: '音频',
+  videoinput: '视频',
 }
 
 function Options(props: OptionsProps) {
   const label = labels[props.type]
   return (
     <React.Fragment>
-      <option value={DEVICE_DISABLED_ID}>No {label}</option>
-      <option value={DEVICE_DEFAULT_ID}>Default {label}</option>
+      <option value={DEVICE_DISABLED_ID}>无 {label}</option>
+      <option value={DEVICE_DEFAULT_ID}>默认 {label}</option>
       {
         props.devices
         .map(device =>

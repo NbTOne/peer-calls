@@ -101,7 +101,7 @@ describe('components/Toolbar', () => {
   })
 
   describe('handleFullscreenClick', () => {
-    it('toggle fullscreen', () => {
+    it('切换全屏 ', () => {
       const button = node.querySelector('.fullscreen')!
       TestUtils.Simulate.click(button)
       expect(button.classList.contains('on')).toBe(false)
@@ -265,7 +265,7 @@ describe('components/Toolbar', () => {
       expect(copyUrl).toBeDefined()
       TestUtils.Simulate.click(copyUrl)
       expect(await p).toEqual({
-        title: 'Peer Call',
+        title: 'P2P通话',
         text: 'john has invited you to a meeting on Peer Calls',
         url: jasmine.stringMatching(/^http/),
       })

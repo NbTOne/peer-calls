@@ -24,7 +24,7 @@ const defaultState: MessagesState = {
 
 function convertNotificationToMessage(action: NotificationAddAction): Message {
   return {
-    peerId: '[PeerCalls]',
+    peerId: '[P2P通话]',
     message: action.payload.message,
     system: true,
     timestamp: new Date().toLocaleString(),

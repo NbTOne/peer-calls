@@ -59,21 +59,21 @@ extends React.PureComponent<SidebarProps, SidebarState> {
             <SidebarButton
               activePanel={panel}
               className='sidebar-menu-chat'
-              label='Chat'
+              label='聊天'
               onClick={this.focusPanel}
               panel={panelChat}
             />
             <SidebarButton
               activePanel={panel}
               className='sidebar-menu-users'
-              label='Users'
+              label='用户'
               onClick={this.focusPanel}
               panel={panelUsers}
             />
             <SidebarButton
               activePanel={panel}
               className='sidebar-menu-settings'
-              label='Settings'
+              label='设置'
               onClick={this.focusPanel}
               panel={panelSettings}
             />

@@ -72,17 +72,17 @@ export default class Input extends React.PureComponent<InputProps, InputState> {
           className="chat-controls-textarea"
           onChange={this.handleChange}
           onKeyPress={this.handleKeyPress}
-          placeholder="Type a message"
+          placeholder="输入消息"
           value={message}
           ref={this.textArea}
         />
         <div className="chat-controls-buttons">
-          <input type="submit" value="Send"
+          <input type="submit" value="发送"
             className="chat-controls-buttons-send"
           />
           <input
             type="submit"
-            value="Send File"
+            value="发送文件"
             className="chat-controls-buttons-send-file"
             onClick={this.handleSendFile}
           />

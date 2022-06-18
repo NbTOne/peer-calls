@@ -29,7 +29,7 @@ var resourcesFS embed.FS
 
 // GitDescribe contains the version information.
 // nolint:gochecknoglobals
-var GitDescribe = "v0.0.0"
+var GitDescribe = "v1.0.0"
 
 func mustSub(dir fs.FS, path string) fs.FS {
 	fs, err := fs.Sub(dir, path)

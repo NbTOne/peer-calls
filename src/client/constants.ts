@@ -14,7 +14,7 @@ export const DIAL_STATE_IN_CALL: DialState = 'in-call'
 export const HANG_UP = 'HANG_UP'
 
 export const ME = '_me_'
-export const PEERCALLS = '[PeerCalls]'
+export const PEERCALLS = '[P2P通话]'
 
 export const DEVICE_DISABLED_ID = 'disabled'
 export const DEVICE_DEFAULT_ID = ''

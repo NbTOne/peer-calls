@@ -1,22 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Peer Calls - Video calls to anybody in the world with a private direct connection</title>
+  <title>P2P通话-通过直连通信</title>
   {{template "header" .}}
 </head>
 <body>
-  <a id="github-ribbon" href="https://github.com/jeremija/peer-calls" target="_blank">
-    <img src="{{.BaseURL}}/res/fork.png" alt="Fork me on GitHub">
-  </a>
+ 
 
   <div id="container">
     <form id="form" method="post" action="{{.BaseURL}}/call" autocomplete="off">
       <h1>
-        <img src="{{.BaseURL}}/res/peer-calls.svg" width="100%" alt="Peer Calls">
+        p2p聊天室
       </h1>
-      <p>Group peer-to-peer calls for everyone. Create a private room. Share the link.</p>
-      <input type="text" value="" name="call" placeholder="Room ID (Leave empty for random)" autofocus>
-      <input type="submit" value="Start Session">
+      <p>为每个人分组点对点通话。创建私人房间。共享链接。</p>
+      <input type="text" value="" name="call" placeholder="房间ID（不填则随机生成）" autofocus>
+      <input type="submit" value="建立房间">
     </form>
   </div>
 

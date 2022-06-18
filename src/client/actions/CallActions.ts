@@ -30,7 +30,7 @@ export const init = (): ThunkResult<Promise<void>> => async (
 ) => {
   return new Promise(resolve => {
     socket.on('connect', () => {
-      dispatch(NotifyActions.warning('Connected to server socket'))
+      dispatch(NotifyActions.warning('已连接到服务器套接字'))
       dispatch(connected())
 
       const state = getState()

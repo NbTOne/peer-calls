@@ -131,7 +131,7 @@ export default class Toolbar extends React.PureComponent<
     const text = `${nickname} has invited you to a meeting on Peer Calls`
     if (canShare(navigator)) {
       await navigator.share({
-        title: 'Peer Call',
+        title: '呼叫',
         text,
         url: link,
       })
@@ -168,7 +168,7 @@ export default class Toolbar extends React.PureComponent<
             key='copy-url'
             icon={canShare(navigator) ? MdShare : MdContentCopy}
             onClick={this.copyInvitationURL}
-            title={canShare(navigator) ? 'Share' : 'Copy Invitation URL'}
+            title={canShare(navigator) ? '分享' : '复制邀请链接'}
           />
           {isInCall && (
             <React.Fragment>
@@ -180,7 +180,7 @@ export default class Toolbar extends React.PureComponent<
                 blink={!this.props.chatVisible && hasUnread}
                 onClick={this.handleToggleSidebar}
                 on={this.props.chatVisible}
-                title='Show Sidebar'
+                title='显示侧栏'
               />
             </React.Fragment>
           )}
@@ -238,7 +238,7 @@ export default class Toolbar extends React.PureComponent<
               icon={MdScreenShare}
               offIcon={MdStopScreenShare}
               key='stream-desktop'
-              title='Share Desktop'
+              title='共享桌面'
               desktopStream={this.props.desktopStream}
               onGetDesktopStream={this.props.onGetDesktopStream}
               onRemoveLocalStream={this.props.onRemoveLocalStream}
@@ -251,7 +251,7 @@ export default class Toolbar extends React.PureComponent<
               key='hangup'
               className='hangup'
               icon={MdCallEnd}
-              title='Hang Up'
+              title='挂断'
             />
 
             <AudioDropdown />
@@ -263,7 +263,7 @@ export default class Toolbar extends React.PureComponent<
               icon={MdFullscreenExit}
               offIcon={MdFullscreen}
               on={this.state.fullScreenEnabled}
-              title='Toggle Fullscreen'
+              title='切换全屏 '
             />
 
           </div>

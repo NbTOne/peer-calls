@@ -82,7 +82,7 @@ describe('CallActions', () => {
         type: constants.NOTIFY,
         payload: {
           id: jasmine.any(String),
-          message: 'Connected to server socket',
+          message: '已连接到服务器套接字',
           type: 'warning',
         },
       }, {
@@ -100,7 +100,7 @@ describe('CallActions', () => {
         type: constants.NOTIFY,
         payload: {
           id: jasmine.any(String),
-          message: 'Connected to server socket',
+          message: '已连接到服务器套接字',
           type: 'warning',
         },
       }, {
@@ -145,7 +145,7 @@ describe('CallActions', () => {
         expect(store.getState().allActions.slice(1)).toEqual([{
           payload: {
             id: jasmine.any(String),
-            message: 'Connected to server socket',
+            message: '已连接到服务器套接字',
             type: 'warning',
           },
           type: constants.NOTIFY,
