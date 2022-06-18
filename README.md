@@ -1,5 +1,7 @@
 # Peer Calls v4
 
+[中文文档](https://blog.wandouwang.cn/archives/peercallsp2p-xiang-mu-da-jian)
+
 ![Peer Calls CI](https://github.com/peer-calls/peer-calls/workflows/Peer%20Calls%20CI/badge.svg)
 [![Go Report Card](https://goreportcard.com/badge/github.com/peer-calls/peer-calls)](https://goreportcard.com/report/github.com/peer-calls/peer-calls)
 
